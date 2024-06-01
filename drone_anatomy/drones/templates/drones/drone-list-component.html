@@ -1,0 +1,37 @@
+<div class="container mil-p-120-60">
+  <div class="row align-items-center mil-mb-30">
+    <div class="col-lg-6 mil-mb-30">
+      <h3 class="mil-up">Our Drones</h3>
+    </div>
+    <div class="col-lg-6 mil-mb-30">
+      <div class="mil-adaptive-right mil-up">
+        <a href="{% url 'drone_anatomy.drones:drone-list' %}"
+           class="mil-link mil-dark mil-arrow-place">
+          <span>View all</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    {% for drone in drones %}
+      <div class="col-lg-4 ">
+        <a href="#" class="mil-blog-card mil-mb-60">
+          <div class="mil-cover-frame mil-up">
+            <img src="{{ drone.featured_image.url }}" alt="cover" />
+          </div>
+          <div class="mil-post-descr">
+            <!-- <div class="mil-labels mil-up mil-mb-30">
+              <div class="mil-label mil-upper mil-accent">{{ drone.name }}</div>
+            </div> -->
+            <h4 class="mil-up mil-mb-30 mil-accent">{{ drone.name }}</h4>
+            <p class="mil-post-text mil-up mil-mb-30">{{ drone.description|truncatewords:30 }}</p>
+            <div class="mil-up">
+              <a href="{{ drone.get_absolute_url }}"
+                 class="mil-button mil-arrow-place mil-mb-60"><span>Learn More</span></a>
+            </div>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,123 @@
+{% load static %}
+
+<!-- menu -->
+<div class="mil-menu-frame">
+  <!-- frame clone -->
+  <div class="mil-frame-top">
+    <a href="{% url 'drone_anatomy.core:home' %}" class="mil-logo">Drone Anatomy</a>
+    <div class="mil-menu-btn">
+      <span></span>
+    </div>
+  </div>
+  <!-- frame clone end -->
+  <div class="container">
+    <div class="mil-menu-content">
+      <div class="row">
+        <div class="col-xl-5">
+          <nav class="mil-main-menu" id="swupMenu">
+            <ul>
+              <li class="{% if request.path == '/' %}mil-active{% endif %}">
+                <a href="{% url 'drone_anatomy.core:home' %}">Home</a>
+              </li>
+              <li class="{% if request.path == '/drones/' %}mil-active{% endif %}">
+                <a href="{% url 'drone_anatomy.drones:drone-list' %}">Drones</a>
+              </li>
+              <li class="{% if request.path == '/services/' %}mil-active{% endif %}">
+                <a href="{% url 'drone_anatomy.core:service-list' %}">Services</a>
+              </li>
+              <li class="{% if request.path == '/about/' %}mil-active{% endif %}">
+                <a href="{% url 'drone_anatomy.core:about' %}">About Us</a>
+              </li>
+              <li class="{% if request.path == '/blogs/' %}mil-active{% endif %}">
+                <a href="{% url 'drone_anatomy.blogs:blog-list' %}">Blogs</a>
+              </li>
+              <li class="{% if request.path == '/contact/' %}mil-active{% endif %}">
+                <a href="{% url 'drone_anatomy.core:contact' %}">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-xl-7">
+          <div class="mil-menu-right-frame">
+            
+            <div class="mil-menu-right">
+              <div class="row">
+                <div class="col-lg-8 mil-mb-60">
+                  <h6 class="mil-muted mil-mb-30">More Links</h6>
+                  <ul class="mil-menu-list">
+                    <li>
+                      <a href="#" class="mil-light-soft">News and Event</a>
+                    </li>
+                    <li>
+                      <a href="#" class="mil-light-soft">Gallery</a>
+                    </li>
+                    <li>
+                      <a href="#" class="mil-light-soft">Our journey</a>
+                    </li>
+                    <li>
+                      <a href="#" class="mil-light-soft">Projects</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 mil-mb-60">
+                  <h6 class="mil-muted mil-mb-30">Useful links</h6>
+                  <ul class="mil-menu-list">
+                    <li>
+                      <a href="#." class="mil-light-soft">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="#." class="mil-light-soft">Terms and conditions</a>
+                    </li>
+                    <li>
+                      <a href="#." class="mil-light-soft">Cookie Policy</a>
+                    </li>
+                    <li>
+                      <a href="#." class="mil-light-soft">Careers</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mil-divider mil-mb-60"></div>
+              <div class="row">
+                <div class="col-lg-11 mil-mb-60">
+                  <h6 class="mil-muted mil-mb-30">Address</h6>
+                  <p class="mil-light-soft">
+                    C-40, Durga Industrial Park, Sahibabad, Ghaziabad, UP, India <span class="mil-no-wrap"><a href="mailto:info@droneanatomy.com">info@droneanatomy.com</a></span>
+                  </p>
+                  <p class="mil-light-soft">
+                    <span class="mil-no-wrap">+91-98548-xxxxx</span>
+                  </p>
+                  <div class="mil-mb-30" style="margin: 1rem 0;">
+                    <ul class="mil-social-icons mil-up">
+                      <li>
+                        <a href="https://www.linkedin.com/company/drone-anatomy/mycompany/"
+                           target="_blank"
+                           class="social-icon">
+                          <i class="fab fa-linkedin"></i></a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/droneanatomy_/"
+                           target="_blank"
+                           class="social-icon">
+                          <i class="fab fa-instagram"></i></a>
+                      </li>
+                      <li>
+                        <a href="www.twitter.com" target="_blank" class="social-icon">
+                          <i class="fab fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="www.youtube.com" target="_blank" class="social-icon">
+                          <i class="fab fa-youtube"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- menu -->
