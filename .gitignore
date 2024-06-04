@@ -266,6 +266,8 @@ Session.vim
 tags
 
 ### Cookiecutter Django Specific
+.envir
+.envir/
 .envs/
 .celerybeat-schedule
 .django/

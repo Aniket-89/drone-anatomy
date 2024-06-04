@@ -17,6 +17,6 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent
 
 sys.path.append(str(BASE_DIR / "drone_anatomy"))
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings.production')
 
 application = get_wsgi_application()
