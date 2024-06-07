@@ -26,7 +26,7 @@
     <!-- banner end -->
 
     <!-- Vision -->
-    <section id="vision">
+    <!-- <section id="vision">
       <div class="container mil-p-120-30">
         <div class="row">
           <div class="col-lg-6">
@@ -37,35 +37,18 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Vision end -->
 
-    <!-- Mission -->
-    <section id="mission">
-        <div class="container mil-p-120-90">
-          <div class="row">
-            <div class="col-lg-6">
-              <h3 class="mil-up">Our <span class="mil-thin">Mission</span></h3>
-              <p class="mil-mb-30">
-                  A global leader in drone technology to improve productivity and efficiency
-                  of businesses and government Agencies by providing them with  cutting-edge drone solutions.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    <!-- Mission end -->
     <!-- team -->
     <section id="team">
 
-      <div class="container mil-p-120-90">
+      <div class="container mil-p-120-30">
         <h1 class="mil-mb-60">
-            Meet <span class="mil-thin">Our</span>
-            <br />
-            Creative <span class="mil-thin">Team</span>
+            Meet <span class="mil-thin">Our</span><span class="mil-thin"> Team</span>
           </h1>
 
-        <div class="row">
+        <div class="row justify-content-between">
           {% for member in members %}
             <div class="col-sm-6 col-md-4 col-lg-3">
               <div class="mil-team-card mil-up mil-mb-30">
@@ -90,6 +73,7 @@
                   </div>
                 </div>
               </div>
+              <p>{{ member.brief }}</p>
             </div>
           {% endfor %}
 
@@ -97,6 +81,105 @@
       </div>
     </section>
     <!-- team end -->
+     
+    <!-- journey -->
+    <section id="team">
+
+        <div class="container mil-p-120-30">
+            
+          <h1 class="mil-mb-60">
+              <span class="mil-thin">Our</span> Journey
+            </h1>
+            <div class="mil-vert-between mil-up mil-mb-120">
+                <div class="journey-container img-left mil-flex mil-up mil-mb-30">
+                    <div class="journey-img mil-o-hidden"><img src="{% static 'core/img/drone-white.jpg' %}" alt=""></div>
+                    <span class="mil-accent journey-year mil-up mil-parallax" data-value-1="60" data-value-2="-60">-2015-</span>
+                    <div class="journey-desc mil-up ">
+                        <h4 class="mil-h4">DRONE ANATOMY IS FOUNDED</h4>
+                        <blockquote>"Age is just a number when it comes to entrepreneurship - young minds bring fresh ideas, boundless energy, and a fearlessness to chase their dreams."</blockquote>
+                        <p class="mil-text-xl mil-dark mil-bold">Saurabh started with Drones at the age of 15 and got Awarded in the National Science Exhibition.</p>
+                    </div>
+                </div>
+                <div class="journey-container img-right mil-flex mil-up mil-mb-120">
+                    <div class="journey-img mil-o-hidden"><img src="{% static 'core/img/drone-white.jpg' %}" alt=""></div>
+                    <span class="mil-accent journey-year mil-up mil-parallax" data-value-1="60" data-value-2="-60">-2016-</span>
+                    <div class="journey-desc">
+                        <blockquote>"When two minds with a shared passion come together, great things happen - let's make magic!"</blockquote>
+                        <p class="mil-text-xl mil-dark mil-bold">Explored industry and met Mayank.</p>
+                    </div>
+                </div>
+                <div class="journey-container img-left mil-flex mil-up mil-mb-120">
+                    <div class="journey-img mil-o-hidden"><img src="{% static 'core/img/drone-white.jpg' %}" alt=""></div>
+                    <span class="mil-accent journey-year mil-up mil-parallax" data-value-1="60" data-value-2="-60">-2017-</span>
+                    <div class="journey-desc mil-up ">
+                        <blockquote>"The feeling of making money together as a team is like rocket fuel for your business - let's keep the momentum going and reach for the stars!"</blockquote>
+                        <p class="mil-text-xl mil-dark mil-bold">Excited from the business potential started with their first office.</p>
+                    </div>
+                </div>
+                <div class="journey-container img-right mil-flex mil-up mil-mb-120">
+                    <div class="journey-img mil-o-hidden"><img src="{% static 'core/img/drone-white.jpg' %}" alt=""></div>
+                    <span class="mil-accent journey-year mil-up mil-parallax" data-value-1="60" data-value-2="-60">-2018-</span>
+                    <div class="journey-desc">
+                        <blockquote>"Our first product delivery is just the beginning - we're paving the way for a future full of innovation and success!"</blockquote>
+                    <p class="mil-text-xl mil-dark mil-bold">Started delivering Made in India drones to Indian Army & met Dipanshu.</p>
+                    </div>
+                </div>
+                <div class="journey-container img-left mil-flex mil-up mil-mb-120">
+                    <div class="journey-img mil-o-hidden"><img src="{% static 'core/img/drone-white.jpg' %}" alt=""></div>
+                    <span class="mil-accent journey-year mil-up mil-parallax" data-value-1="60" data-value-2="-60">-2019-</span>
+                    <div class="journey-desc mil-up">
+                        <blockquote>"Smart entrepreneurs pivot with the market - by adapting to changing demands, we're not just surviving, we're thriving!"</blockquote>
+                        <p class="mil-text-xl mil-dark mil-bold">Started making high pay load drones which market required.</p>
+                    </div>
+                </div>
+                <div class="journey-container img-right mil-flex mil-up mil-mb-120">
+                    <div class="journey-img mil-o-hidden"><img src="{% static 'core/img/drone-white.jpg' %}" alt=""></div>
+                    <span class="mil-accent journey-year mil-up mil-parallax" data-value-1="60" data-value-2="-60">-2020-</span>
+                    <div class="journey-desc">
+                        <blockquote>"Risk-taking meets innovation - using drones to sanitize in the time of COVID, we're not just adapting, we're changing the game!"</blockquote>
+                        <p class="mil-text-xl mil-dark mil-bold">Actual implementation of high pay load drones during covid for santization purposes.</p>
+                    </div>
+                </div>
+                <div class="journey-container img-left mil-flex mil-up mil-mb-120">
+                    <div class="journey-img mil-o-hidden"><img src="{% static 'core/img/drone-white.jpg' %}" alt=""></div>
+                    <span class="mil-accent journey-year mil-up mil-parallax" data-value-1="60" data-value-2="-60">-2021-</span>
+                    <div class="journey-desc mil-up ">
+                        <blockquote>"Advancing in business is not just about reaching new heights - it's about pushing past boundaries, breaking through barriers, and achieving the impossible!"</blockquote>
+                        <p class="mil-text-xl mil-dark mil-bold">Advancement of  business growth </p>
+                    </div>
+                </div>
+                <div class="journey-container img-right mil-flex mil-up mil-mb-120">
+                    <div class="journey-img mil-o-hidden"><img src="{% static 'core/img/drone-white.jpg' %}" alt=""></div>
+                    <span class="mil-accent journey-year mil-up mil-parallax" data-value-1="60" data-value-2="-60">-2022-</span>
+                    <div class="journey-desc">
+                        <blockquote>"Building a team is not just about growing headcount - it's about cultivating a community of leaders, empowering individuals to reach their full potential, and achieving collective greatness!"</blockquote>
+                        <p class="mil-text-xl mil-dark mil-bold">So founded DAstrionics technologies Pvt Ltd with a vison to make in India for the world.</p>
+                    </div>
+                </div>
+                <!-- <div class="journey-container img-left mil-flex mil-up mil-mb-120">
+                    <div class="journey-img mil-o-hidden"><img src="{% static 'core/img/drone-white.jpg' %}" alt=""></div>
+                    <span class="mil-accent journey-year mil-up">-2023-</span>
+                    <div class="journey-desc mil-up ">
+                        <h4 class="mil-h4">DRONE ANATOMY IS FOUNDED</h4>
+                        <blockquote>"Age is just a number when it comes to entrepreneurship - young minds bring fresh ideas, boundless energy, and a fearlessness to chase their dreams."</blockquote>
+                        <p>Saurabh started with Drones at the age of 15 and got Awarded in the National Science Exhibition.</p>
+                    </div>
+                </div>
+                <div class="journey-container img-right mil-flex mil-up mil-mb-120">
+                    <div class="journey-img mil-o-hidden"><img src="{% static 'core/img/drone-white.jpg' %}" alt=""></div>
+                    <span class="mil-accent journey-year mil-up">-2024-</span>
+                    <div class="journey-desc">
+                        <h4 class="mil-h4">Lorem ipsum dolor sit amet consectetur.</h4>
+                        <blockquote>"When two minds with a shared passion come together, great things happen - let's make magic!"</blockquote>
+                        <p>Explored industry and met Mayank.</p>
+                    </div>
+                </div> -->
+                
+            </div>
+
+        </div>
+    <!-- journey end -->
+
     <!-- call to action -->
     <section class="mil-soft-bg">
       <div class="container mil-p-120-120">

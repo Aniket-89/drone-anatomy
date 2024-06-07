@@ -96,6 +96,10 @@ body {
   background-color: transparent;
 }
 
+li {
+    list-style: none;
+}
+
 .mil-wrapper {
   position: relative;
   overflow: hidden;
@@ -326,7 +330,7 @@ h6,
 }
 
 blockquote {
-  padding: 60px;
+  padding: 30px;
   background-color: rgba(0, 0, 0, 0.05);
   font-size: 18px;
   color: rgb(0, 0, 0);
@@ -335,7 +339,7 @@ blockquote {
 }
 @media screen and (max-width: 768px) {
   blockquote {
-    padding: 30px;
+    padding: 20px;
     font-size: 16px;
   }
 }
@@ -4535,6 +4539,7 @@ html.is-animating .mil-menu-frame {
 }
 
 
+
 .mil-banner-video {
     position: absolute;
   top: 50%;
@@ -4552,3 +4557,112 @@ html.is-animating .mil-menu-frame {
 .hidden {
     display: none;
 }
+
+.journey-card {
+    position: relative; /* Make the element relative for positioning */
+  overflow: hidden;
+}
+
+.journey-card img {
+    transition: 1s cubic-bezier(0, 0, 0.3642, 1);
+}
+.journey-card:hover .quote-overlay{
+    display: flex;
+}
+
+.quote-overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    transition: 1s cubic-bezier(0, 0, 0.3642, 1);
+    align-items: center;
+}
+
+.quote {
+    color: white;
+    font-size: 18px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* @media screen and (min-width: 2500px) {
+    .container {
+        max-width: 1500px;
+    }
+} */
+
+.container {
+    max-width: 80%;
+}
+@media screen and (max-width: 980px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+  .journey-container {
+    display: flex; /* Allows items to wrap to multiple lines */
+    gap: 3rem; /* Space items evenly with space between */
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .journey-img {
+    min-width: 400px;
+    max-width: 500px;
+    height: 300px;
+    object-position: center
+  }
+
+
+  .journey-img img {
+    -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+    height: 300px;
+    width: 500px;
+  }
+  .journey-img:hover img {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+  }
+
+  .journey-desc {
+    /* min-width: 0%; */
+    max-width: 500px;
+  }
+
+  .journey-desc h4 {
+    line-height: 1.6;
+  }
+
+  .journey-year {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .img-left {
+    flex-direction: row;
+  }
+  .img-right {
+    flex-direction: row-reverse;
+  }
+
+  @media  screen and (max-width: 1125px) {
+    .img-right {
+        flex-direction: column;
+    }    
+    
+  .img-left {
+    flex-direction: column;
+  }
+  }
